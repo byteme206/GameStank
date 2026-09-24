@@ -97,25 +97,25 @@ def audio_callback(indata, frames, time, status):
             else:
                 trigger_atomizer_raw_udp(1, 1)
         elif inferred_class in ["Explosion", "Fireworks", "Firecracker", "Boom"]:
-                    if ATOMIZER_METHOD == "http":
-                        trigger_atomizer_http(2, 1)
-                    else:
-                        trigger_atomizer_raw_udp(2, 1)
+            if ATOMIZER_METHOD == "http":
+                trigger_atomizer_http(2, 1)
+            else:
+                trigger_atomizer_raw_udp(2, 1)
         elif inferred_class in ["Motor vehicle (road)", "Car", "Skidding", "Tire squeal", "Race car, auto racing"]:
-                    if ATOMIZER_METHOD == "http":
-                        trigger_atomizer_http(3, 1)
-                    else:
-                        trigger_atomizer_raw_udp(3, 1)
+            if ATOMIZER_METHOD == "http":
+                trigger_atomizer_http(3, 1)
+            else:
+                trigger_atomizer_raw_udp(3, 1)
         elif inferred_class in ["Rustling leaves", "Outside, rural or natural"]:
             if ATOMIZER_METHOD == "http":
                 trigger_atomizer_http(4, 1)
             else:
                 trigger_atomizer_raw_udp(4, 1)
         elif inferred_class in ["Thunderstorm", "Thunder", "Rain", "Raindrop", "Rain on surface"]:
-                    if ATOMIZER_METHOD == "http":
-                        trigger_atomizer_http(5, 1)
-                    else:
-                        trigger_atomizer_raw_udp(5, 1)
+            if ATOMIZER_METHOD == "http":
+                trigger_atomizer_http(5, 1)
+            else:
+                trigger_atomizer_raw_udp(5, 1)
 
 
 # Initialization
