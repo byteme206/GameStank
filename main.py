@@ -129,6 +129,6 @@ with sd.InputStream(device=VB_CABLE,
                     channels=1, 
                     samplerate=SAMPLE_RATE, 
                     blocksize=BLOCK_SIZE, 
-                    callback=audio_callback(model=model, labels=labels)):
+                    callback=audio_callback):
     while True:
          sd.sleep(1000)
